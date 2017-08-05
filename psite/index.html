@@ -27,5 +27,29 @@
       	</ul>
       </p>
 
+      <canvas id="canvas" width="200" height="200" style="border: 1px solid blue;">
+       </canvas>
+       <script>
+       	window.addEventListener("load", draw, false);
+       	function draw()
+       	{
+       		var canvas = document.getElementById("canvas")
+       		var context = canvas.getContext("2d")
+       		context.beginPath();
+       		context.lineWidth=20;
+       		context.strokeStyle="green";
+       		context.lineCap="round"
+       		context.moveTO(50, canvas.height -150);
+       		context.lineTO(canvas.widtg -50,150);
+       		cantext.stroke();
+       		context.beginPath();
+       		context.strokeStyle="pink"
+       		context.lineCap="square"
+       		context.moveTo(50, canvas.height -50);
+       		context.lineTO(canvas.width -50, 50);
+       		context.stroke();
+       	}
+
+       </script>
 	</body>
 </html>
