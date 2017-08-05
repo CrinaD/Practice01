@@ -2,17 +2,20 @@
 <html>
 	<head><title>Dinner Recepies</title></head>
 	<body>
-		<h1>Dinner recepies!</h1>
-		
+		<h1 id="top">Dinner recepies!</h1>
+		<a href="#For Dinner">For Dinner</a><br />
+    <a href="#The Receipe">The Receipe</a><br />
+    <a href="#How to do it">How To Prepare</a><br />
+    <a href="#What you need">What you need</a><br />
 		<p>By <abbr title="Miss">Ms</abbr> CrinaD</p>
 		</blockquote>
         <p><q>Quality is not an act, it is a habit!</q>-Aristotle</p>
 		<hr />
-		<h1>For Dinner</h1>
+		<h1 id="For Dinner">For Dinner</h1>
 		<p>This page contains some of my favorite Dinner Meals.</p>
 
-        <h2><ins>Shrimp Salad</ins></h2>
-        <h2>What to do</h2>
+        <h2 id="The receipe"><ins>Shrimp Salad</ins></h2>
+        <h2 id="How to do it" >What to do</h2>
         <ol>
         	<li>Put Shrimp in the oven util properly cooked</li>
         	<li>When ready, take out of oven and add lime juice</li>
@@ -20,7 +23,7 @@
         	<li>Add salt</li>
         	<li>Enjoy! :)</li>
         </ol>
-        <h2>Ingredients</h2>
+        <h2 id="What you need">Ingredients</h2>
         <ul>
           <li>Shrimp</li>
         	<li>Coconut Oil</li>
@@ -49,6 +52,32 @@
 
       	</ul>
       </p>
+
+
+      <canvas id="canvas" width="700" height="500" style="border: 1px white;">
+       </canvas>
+       <script>
+        window.addEventListener("load", draw, false);
+        function draw()
+        {
+          var canvas = document.getElementById("canvas")
+          var context = canvas.getContext("2d")
+          context.beginPath();
+          context.lineWidth=20;
+          context.strokeStyle="purple";
+          context.lineCap="butt"
+          context.moveTo(200, canvas.height -390);
+          context.lineTo(canvas.width -50,150);
+          context.stroke();
+          context.beginPath();
+          context.strokeStyle="pink"
+          context.lineCap="square"
+          context.moveTo(150, canvas.height -490);
+          context.lineTo(canvas.width -50, 150);
+          context.stroke();
+        };
+
+       </script>
 
 	</body>
 </html>
