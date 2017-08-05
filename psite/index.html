@@ -27,7 +27,7 @@
       	</ul>
       </p>
 
-      <canvas id="canvas" width="200" height="200" style="border: 1px solid blue;">
+      <canvas id="canvas" width="700" height="500" style="border: 1px white;">
        </canvas>
        <script>
        	window.addEventListener("load", draw, false);
@@ -36,16 +36,16 @@
        		var canvas = document.getElementById("canvas")
        		var context = canvas.getContext("2d")
        		context.beginPath();
-       		context.lineWidth=2;
-       		context.strokeStyle="green";
-       		context.lineCap="round"
-       		context.moveTo(50, canvas.height -150);
+       		context.lineWidth=20;
+       		context.strokeStyle="purple";
+       		context.lineCap="butt"
+       		context.moveTo(90, canvas.height -190);
        		context.lineTo(canvas.width -50,150);
-       		cantext.stroke();
+       		context.stroke();
        		context.beginPath();
        		context.strokeStyle="pink"
        		context.lineCap="square"
-       		context.moveTo(50, canvas.height -50);
+       		context.moveTo(450, canvas.height -350);
        		context.lineTo(canvas.width -50, 50);
        		context.stroke();
        	};
