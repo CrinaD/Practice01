@@ -72,19 +72,20 @@
     </table>
 
 
-    <form action="https://crinad.github.io/Practice01/psite/index.html" >
-    <p>Username:
-       <input type="text" name="username" size="15" maxlength="40" />
-    </p>
-    <p>Password:
-       <input type="Password" name="Password" size="15" maxlength="40" />
-    </p>
+    <form action="https://crinad.github.io/Practice01/psite/index.html" method="post" >
+    <label for="username">Username:</label>
+       <input type="text" name="username" required="required" /><br />
+     <label for="Password">Password:</label>
+       <input type="text" name="password" required="required" />
+       <input type="submit" value="Submit" /> 
+    
     <p>What do you think of this website?</p>
        <textarea name="Comments" cols="25" rows="5"> Enter comment here...</textarea>
     </p>
     <p>Select favorite fruit:
     <br />
     <input type="radio" name="fruit" value="strawberry" checked="checked" />Strawberry
+
     <input type="radio" name="fruit" value="blackberry" />Blackberry
     <input type="radio" name="fruit" value="cherry" />Cherry</p>
     <p>Select favorite fruit:
@@ -118,7 +119,32 @@
      <p> Subscribe using email:</p>
     <input type="text" name="user-mail" />
     <input type="image" src="copac.jpg" width="100" height="20"  />
+
+    <label for="Username">Date</label>
+    <input type="date" name="departure" />
+    <input type="submit" value="Submit" /><br />
+       <p>Search:</p>
+    <input type="search" name="search" />
+    <input type="submit" value="Search" /><br />
+
+<p> Enter email:</p>
+ <input type="email" name="email" />
+    <input type="submit" value="Submit" /><br />
+<p> Enter URL:</p>
+    <input type="url" name="website" />
+    <input type="submit" value="Submit" /><br />
     </form>
+
+    <fieldset>
+    	<legend>Contact Details</legend>
+    	<label>Mail<br />
+    	<input type="text" name="mail" /></label><br />
+        <label>Adress<br />
+    	<input type="text" name="Adress" /></label><br />
+    	<label>Tel<br />
+    	<input type="text" name="Tel" /></label><br />
+    	
+    </fieldset>
 
       <canvas id="canvas" width="700" height="500"
        style="border: 1px white;">
