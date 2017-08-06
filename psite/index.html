@@ -10,6 +10,7 @@
         <p><q>Quality is not an act, it is a habit!</q>-Aristotle</p>
 		<hr />
 		<h1>Home</h1>
+		  <img src="copac.jpg" alt="Copac" width="400" height="200" />
 		<p>This <b>website</b>  <i>contains</i> some of my favourite meals<br /> <strong>for breakfast, lunch and dinner</strong>, and it was written  on the 5<sup>th</sup> of July<sub>123</sub>.</p>
 
         <p>This <del>site</del> <cite>Meal Planner</cite> is my <ins>first</ins> website. I learned so much while building it and I hope you like it. :)</p>
@@ -27,9 +28,100 @@
       	</ul>
       </p>
 
-      <img src="psite/copac.jpg" alt="Copac" title="Copac" />
-      <img src="psite/copac.jpg" alt="Copac" width="300" height="300" />
-      <canvas id="canvas" width="700" height="500" style="border: 1px white;">
+      <img src="copac.jpg" alt="Copac" title="Copac" />
+
+    <table border ="2" bgcolor="#efefef">
+    	<tr>
+    	<th width="150"></th>
+    	<th scope="col">Fruit</th>
+    	<th scope="col">Vegetables</th>
+    	</tr>
+    	<tr>
+    		<th scope="row">Cups/day</th>
+    		<td>2</td>
+    		<td>7</td>
+    	</tr>
+    	<tr>
+    		<th scope="row">Price</td>
+    		<td>£2</td>
+    		<td>£5</td>
+    	</tr>
+    </table>
+
+   
+    <table border="2", bgcolor="#cccccc">
+    	<tr>
+    	<th width="150"></th>
+    	<td>9am</td>
+    	<td>12pm</td>
+    	<td>3pm</td>
+    	<td>6pm</td>
+    	</tr>
+    	<tr>
+    		<th> Monday</th>
+    		<td bgcolor="efefef", colspan="2">Breakfast</td>
+    		<td bgcolor="efefef">Lunch</td>
+    		<td>Dinner</td>
+    	</tr>
+    	<tr>
+    		<th>Tuesday</td>
+    		<td>Breakfast</td>
+    		<td colspan="2">Snack</td>
+    		<td>Dinner</td>
+    	</tr>
+    </table>
+
+
+    <form action="https://crinad.github.io/Practice01/psite/index.html" >
+    <p>Username:
+       <input type="text" name="username" size="15" maxlength="40" />
+    </p>
+    <p>Password:
+       <input type="Password" name="Password" size="15" maxlength="40" />
+    </p>
+    <p>What do you think of this website?</p>
+       <textarea name="Comments" cols="25" rows="5"> Enter comment here...</textarea>
+    </p>
+    <p>Select favorite fruit:
+    <br />
+    <input type="radio" name="fruit" value="strawberry" checked="checked" />Strawberry
+    <input type="radio" name="fruit" value="blackberry" />Blackberry
+    <input type="radio" name="fruit" value="cherry" />Cherry</p>
+    <p>Select favorite fruit:
+    <br />
+    <input type="checkbox" name="fruit" value="strawberry" checked="checked" />Strawberry
+    <input type="checkbox" name="fruit" value="blackberry" />Blackberry
+    <input type="checkbox" name="fruit" value="cherry" />Cherry</p>
+    <p>Which fruit is your favorite?</p>
+    <select name="dropdown">
+        <option value="select">select</option>
+    	<option value="blackberry"> blackberry</option>
+    	<option value="banana"> banana</option>
+    	<option value="kiwi">kiwi</option>
+    </select>
+    <p>Which fruit is your favorite?Can choose more than one</p>
+    <select name="multiple" size="3" multiple="multiple">
+        <option value="cherry">cherry</option>
+    	<option value="blackberry"> blackberry</option>
+    	<option value="banana"> banana</option>
+    	<option value="kiwi">kiwi</option>
+    </select>
+    </form>
+
+    <form action="https://crinad.github.io/Practice01/psite/index.html" method="post">
+    <p> Upload a file:</p>
+    <input type="file" name="user-file" /><br />
+    <input type="submit" value="Upload" />
+     <p> Subscribe using email:</p>
+    <input type="text" name="user-mail" />
+    <input type="submit" value="Subscribe"  />
+     <p> Subscribe using email:</p>
+    <input type="text" name="user-mail" />
+    <input type="image" src="copac.jpg" width="100" height="20"  />
+    </form>
+
+      <canvas id="canvas" width="700" height="500"
+       style="border: 1px white;">
        </canvas>
        <script>
        	window.addEventListener("load", draw, false);
