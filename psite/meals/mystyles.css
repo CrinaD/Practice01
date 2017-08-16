@@ -1,9 +1,40 @@
-body{background-color: lightblue;
-font-family: arial;}
+body{background-color: powderblue;
+font-family: arial;
+line-height: 1.5em; 
+letter-spacing: 0.2em;
+word-spacing: 0.5em;
+text-align: left;
+opacity: 0.7;
+}
 
 h1{
 	color:navy;
 	margin-left: 20px;
+	font-weight: bold;
+	font-style: italic;
+	text-transform: capitalize;  
+    text-decoration: underline; 
+    text-align: center;
+    background-color: 
 
 }
-p{color:red;}
+h2{
+	color: green;
+	
+    background-color: hsla(250, 80%, 80%, 0.8);
+
+}
+p.intro:first-letter {font-size: 150%}
+p.intro:first-line {font-weight: bold;}
+
+a:link {color: navy;}
+
+a:visited {color: darkcyan;
+           text-decoration: none;}
+a:hover {color: deeppink;}
+
+a:active {color: cyan;}
+.con
+{vertical-align: text-top;}
+p{color: green;
+  font-style: oblique;}
