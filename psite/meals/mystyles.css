@@ -15,26 +15,48 @@ h1{
 	text-transform: capitalize;  
     text-decoration: underline; 
     text-align: center;
-    background-color: 
+    border-style: dashed;
+    border-color: navy;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    outline-color: green;
+    outline-style: dashed;
 
 }
 h2{
 	color: green;
-	
+	width: 200px;
+    border: 5px solid green;
+    padding: 15px;
+    margin: 20px;
+    outline-style: dashed;
+    outline-color: navy;
     background-color: hsla(250, 80%, 80%, 0.8);
 
 }
 p.intro:first-letter {font-size: 150%}
 p.intro:first-line {font-weight: bold;}
 
-a:link {color: navy;}
+a:link {color: navy;
+         background-color: lightgreen;}
 
-a:visited {color: darkcyan;
-           text-decoration: none;}
-a:hover {color: deeppink;}
+a:visited {color: green;
+	       background-color: lightgreen;
+           text-decoration: line-through;}
+a:hover {color: deeppink;
+         background-color: lightgreen;}
 
-a:active {color: cyan;}
-.con
+a:active {color: cyan;
+          background-color: lightgreen;}
+
+ul {list-style-type: circle;
+    list-style-position: outside;}
+
+ol{list-style-type: decimal-leading-zero;
+    list-style-position: outside;
+    }
+p.intro
 {vertical-align: text-top;}
 p{color: green;
-  font-style: oblique;}
+  font-style: oblique;
+    }
