@@ -17,6 +17,7 @@ h1{
     text-align: center;
     border-style: dashed;
     border-color: navy;
+    
     padding-bottom: 15px;
     padding-top: 10px;
     outline-color: green;
@@ -29,11 +30,11 @@ h2{
     border: 5px solid green;
     padding: 15px;
     margin: 20px;
-    outline-style: dashed;
-    outline-color: navy;
+    border-radius: 15px 50px;
     background-color: hsla(250, 80%, 80%, 0.8);
 
 }
+h3{border-radius: 15px 50px 25px;}
 p.intro:first-letter {font-size: 150%}
 p.intro:first-line {font-weight: bold;}
 
@@ -55,6 +56,30 @@ ul {list-style-type: circle;
 ol{list-style-type: decimal-leading-zero;
     list-style-position: outside;
     }
+img.con {float: left;
+     margin: 0 50px 100px 30px;}
+
+table,td,th {width: 500px;
+            empty-cells: show;
+            border-collapse: collapse;
+        border: 2px solid #0088dd;
+        padding: 10px;
+        margin-bottom: 20px;
+      }
+th,td {text-align: center;
+    text-transform: capitalize;
+    }
+tr:nth-child(even) {background-color: cyan;}
+tr:nth-child(odd) {background-color: lightgreen;}
+tr:hover {background-color: lightpink;}
+
+input {color: deeppink;
+       background-color: cyan;
+       border: 2px navy;
+       border-radius: 5px;
+       padding:5px 5px 5px 5px;
+       margin-bottom: 10px;
+       }
 p.intro
 {vertical-align: text-top;}
 p{color: green;

@@ -1,35 +1,48 @@
 <!doctype html>
 <html>
 	<head>
-	    <title>Meal Planner</title>
-       
+	<style>
+	div.container {width: 100%;
+	               border:1px gray;}
+
+	header, footer {
+		padding: 10px;
+	}
+
+	nav {float: left;
+	     max-width: 100px;
+	     margin: 0;
+	     padding: 30px;}
+
+	nav ul{ list-style-type: circle;
+	         padding: 0;}
+	nav ul a{ text-decoration: none;}
+
+	article{margin-left: 150px;
+	        border-left: 1px gray;
+	        padding: 1em;
+	        overflow: hidden; }
+
+	</style>
+	    
+    <link rel="stylesheet" href="meals/mystyles.css">
+     <title>Meal Planner</title>
 	</head>
-	<meta charset="utf-8" name="Details" content="basic website">
-	<meta charset="utf-8" http-equiv="author" content="CrinaD">
-	<meta charset="utf-8" http-equiv="pragma" content="no-cache">
-	<meta charset="utf-8" http-equiv="expires" content="Fri , 12 Aug 2018 23:59:59 GMT">
-	<body style="background-color: powderblue; font-family: arial; word-spacing:0.5em; letter-spacing: 0.2em"; >
-	  <div id="header">
+
+	<body>
+	  <div class="container">
+	  <header>
 		<h1 style="color: green" id="top">My favourite recipes!! </h1>
 		<h2 style="color: yellow">My favourite  recipes!</h2>
 		<h3 style="color: purple">My favourite  recipes!</h3>
 		<p>By <abbr title="Miss">Ms</abbr> CrinaD</p>
 		</blockquote>
         <p><q>Quality is not an act, it is a habit!</q>-Aristotle</p>
-      </div><!--end of header-->
-		<hr />
+        </header>
+	
+        <nav>
 
-      <div id="content">
-		<h1 style="color: navy; text-decoration: underline;">Home</h1>
-		  <img src="copac.jpg" alt="Copac" width="400" height="200" />
-		<p>This <b>website</b>  <i>contains</i> some of my favourite meals<br /> <strong>for breakfast, lunch and dinner</strong>, and it was written  on the 5<sup>th</sup> of July<sub>123</sub>.</p>
-
-        <p style="color: yellow">This <del>site</del> <cite>Meal Planner</cite> is my <ins>first</ins> website. I learned so much while building it and I hope you like it. :)</p>
-        	
     
-     
-
-      <p style="color: green"><b>Links to other pages on this site:</b>
       	<ul>
       		<li><a href="index.html">Home</a></li>
       		<li><a href="meals/breakfast.html">Breakfast</a></li>
@@ -37,32 +50,77 @@
       		<li><a href="meals/dinner.html">Dinner</a></li>
       		<li><a href="contact.html">Contact</a></li>
       	</ul>
-      </p>
+      </nav>
 
-      <img id="img" src="copac.jpg" alt="Copac" title="Copac" />
+      <article>
+		<h1>Home</h1>
+		 
+		<p>This <b>website</b>  <i>contains</i> some of my favourite meals<br /> <strong>for breakfast, lunch and dinner</strong>, and it was written  on the 5<sup>th</sup> of July<sub>123</sub>.</p>
 
-    <table border ="2" bgcolor="#efefef">
+        <p>This <del>site</del> <cite>Meal Planner</cite> is my <ins>first</ins> website. I learned so much while building it and I hope you like it. :)</p>
+        	
+    
+     
+
+
+      <img id="img" src="copac.jpg" alt="Copac" width="700" height="400" margin-left: 50px; />
+    <div style="overflow-x:auto;">
+    <table >
     	<tr>
-    	<th width="150"></th>
+    	<th></th>
     	<th scope="col">Fruit</th>
     	<th scope="col">Vegetables</th>
+    	<th>aaaaaaaaaaaa</th>
+    	<th>bbbbbbbbbbbbbbbbbbbbbb</th>
+    	<th>ccccccccccccccccccccc</th>
+    	<th>ddddddddddddddddddddddddd</th>
+    	<th>eeeeeeeeeeeeeeeeeeeeeeee</th>
+    	<th>sssssssssssssssssss</th>
+    	<th>fffffffffffffffffffffffff</th>
+    	<th>ssssssssssssssssss</th>
+    	<th>wwwwwwwwwwwwwwwwwww</th>
+    	<th>ttttttttttttttttttt</th>
+    	<th>yyyyyyyyyyyyyyyyyy</th>
     	</tr>
     	<tr>
     		<th scope="row">Cups/day</th>
     		<td>2</td>
     		<td>7</td>
+    		<td>1</td>
+    		<td>3</td>
+    		<td>5</td>
+    		<td>7</td>
+    		<td>56</td>
+    		<td>45</td>
+    		<td>43</td>
+    		<td>23</td>
+    		<td>87</td>
+    		<td>54</td>
+    		<td>43</td>
+
     	</tr>
     	<tr>
     		<th scope="row">Price</td>
     		<td>£2</td>
     		<td>£5</td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
+    		<td></td>
     	</tr>
     </table>
-
-   
-    <table border="2", bgcolor="#cccccc">
+    </div>
+   <div style="overflow-x:auto;">
+    <table>
     	<tr>
-    	<th width="150"></th>
+    	<th></th>
     	<td>9am</td>
     	<td>12pm</td>
     	<td>3pm</td>
@@ -70,18 +128,18 @@
     	</tr>
     	<tr>
     		<th> Monday</th>
-    		<td bgcolor="efefef", colspan="2">Breakfast</td>
-    		<td bgcolor="efefef">Lunch</td>
+    		<td  colspan="2">Breakfast</td>
+    		<td>Lunch</td>
     		<td>Dinner</td>
     	</tr>
     	<tr>
-    		<th>Tuesday</td>
+    		<th>Tuesday</th>
     		<td>Breakfast</td>
     		<td colspan="2">Snack</td>
     		<td>Dinner</td>
     	</tr>
     </table>
-
+    </div>
 
     <form action="https://crinad.github.io/Practice01/psite/index.html" method="post" >
     <label for="username">Username:</label>
@@ -181,7 +239,8 @@ Your browser does not support the video tag.
     </video>
 
 
-
+</article>
+<footer>
       <p> <a href="#Top">Top</a></p>
       <p> <a href="#img">Go to image</a></p>
       <canvas id="canvas" width="700" height="500"
@@ -209,12 +268,8 @@ Your browser does not support the video tag.
        	};
 
        </script>
-
-
-
- 
-
-    </div> <!--end of content-->
+</footer>
+</div>
 
 	</body>
 
